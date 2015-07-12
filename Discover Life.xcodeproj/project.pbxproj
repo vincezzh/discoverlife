@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		611DDF7E1B4F07A2007A676D /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611DDF7D1B4F07A2007A676D /* CustomPointAnnotation.swift */; };
+		611DDF801B4FFBEA007A676D /* GoogleSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611DDF7F1B4FFBEA007A676D /* GoogleSearch.swift */; };
+		611DDF821B4FFE91007A676D /* AppleSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611DDF811B4FFE91007A676D /* AppleSearch.swift */; };
+		611DDF841B50377D007A676D /* CamaraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611DDF831B50377D007A676D /* CamaraViewController.swift */; };
+		6178977F1B50AF840058815A /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6178977E1B50AF840058815A /* MainTableViewController.swift */; };
+		617897811B50B3B40058815A /* EntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617897801B50B3B40058815A /* EntryTableViewController.swift */; };
+		61DC4D271B4E1A2F00601C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC4D261B4E1A2F00601C80 /* AppDelegate.swift */; };
+		61DC4D2A1B4E1A2F00601C80 /* Discover_Life.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61DC4D281B4E1A2F00601C80 /* Discover_Life.xcdatamodeld */; };
+		61DC4D2C1B4E1A2F00601C80 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC4D2B1B4E1A2F00601C80 /* MapViewController.swift */; };
+		61DC4D2F1B4E1A2F00601C80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61DC4D2D1B4E1A2F00601C80 /* Main.storyboard */; };
+		61DC4D311B4E1A2F00601C80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61DC4D301B4E1A2F00601C80 /* Images.xcassets */; };
+		61DC4D341B4E1A2F00601C80 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61DC4D321B4E1A2F00601C80 /* LaunchScreen.xib */; };
+		61DC4D401B4E1A2F00601C80 /* Discover_LifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC4D3F1B4E1A2F00601C80 /* Discover_LifeTests.swift */; };
+		61DC4D4A1B4E1AE600601C80 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DC4D491B4E1AE600601C80 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61DC4D3A1B4E1A2F00601C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61DC4D191B4E1A2F00601C80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61DC4D201B4E1A2F00601C80;
+			remoteInfo = "Discover Life";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		611DDF7D1B4F07A2007A676D /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		611DDF7F1B4FFBEA007A676D /* GoogleSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSearch.swift; sourceTree = "<group>"; };
+		611DDF811B4FFE91007A676D /* AppleSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSearch.swift; sourceTree = "<group>"; };
+		611DDF831B50377D007A676D /* CamaraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamaraViewController.swift; sourceTree = "<group>"; };
+		6178977E1B50AF840058815A /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		617897801B50B3B40058815A /* EntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewController.swift; sourceTree = "<group>"; };
+		61DC4D211B4E1A2F00601C80 /* Discover Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discover Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61DC4D251B4E1A2F00601C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61DC4D261B4E1A2F00601C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61DC4D291B4E1A2F00601C80 /* Discover_Life.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Discover_Life.xcdatamodel; sourceTree = "<group>"; };
+		61DC4D2B1B4E1A2F00601C80 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		61DC4D2E1B4E1A2F00601C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61DC4D301B4E1A2F00601C80 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61DC4D331B4E1A2F00601C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		61DC4D391B4E1A2F00601C80 /* Discover LifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Discover LifeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61DC4D3E1B4E1A2F00601C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61DC4D3F1B4E1A2F00601C80 /* Discover_LifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover_LifeTests.swift; sourceTree = "<group>"; };
+		61DC4D491B4E1AE600601C80 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61DC4D1E1B4E1A2F00601C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61DC4D4A1B4E1AE600601C80 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61DC4D361B4E1A2F00601C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61DC4D181B4E1A2F00601C80 = {
+			isa = PBXGroup;
+			children = (
+				61DC4D231B4E1A2F00601C80 /* Discover Life */,
+				61DC4D3C1B4E1A2F00601C80 /* Discover LifeTests */,
+				61DC4D221B4E1A2F00601C80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61DC4D221B4E1A2F00601C80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61DC4D211B4E1A2F00601C80 /* Discover Life.app */,
+				61DC4D391B4E1A2F00601C80 /* Discover LifeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61DC4D231B4E1A2F00601C80 /* Discover Life */ = {
+			isa = PBXGroup;
+			children = (
+				61DC4D261B4E1A2F00601C80 /* AppDelegate.swift */,
+				617897801B50B3B40058815A /* EntryTableViewController.swift */,
+				6178977E1B50AF840058815A /* MainTableViewController.swift */,
+				61DC4D2B1B4E1A2F00601C80 /* MapViewController.swift */,
+				611DDF831B50377D007A676D /* CamaraViewController.swift */,
+				611DDF7D1B4F07A2007A676D /* CustomPointAnnotation.swift */,
+				611DDF7F1B4FFBEA007A676D /* GoogleSearch.swift */,
+				611DDF811B4FFE91007A676D /* AppleSearch.swift */,
+				61DC4D2D1B4E1A2F00601C80 /* Main.storyboard */,
+				61DC4D301B4E1A2F00601C80 /* Images.xcassets */,
+				61DC4D321B4E1A2F00601C80 /* LaunchScreen.xib */,
+				61DC4D281B4E1A2F00601C80 /* Discover_Life.xcdatamodeld */,
+				61DC4D241B4E1A2F00601C80 /* Supporting Files */,
+			);
+			path = "Discover Life";
+			sourceTree = "<group>";
+		};
+		61DC4D241B4E1A2F00601C80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61DC4D491B4E1AE600601C80 /* CoreLocation.framework */,
+				61DC4D251B4E1A2F00601C80 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61DC4D3C1B4E1A2F00601C80 /* Discover LifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				61DC4D3F1B4E1A2F00601C80 /* Discover_LifeTests.swift */,
+				61DC4D3D1B4E1A2F00601C80 /* Supporting Files */,
+			);
+			path = "Discover LifeTests";
+			sourceTree = "<group>";
+		};
+		61DC4D3D1B4E1A2F00601C80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61DC4D3E1B4E1A2F00601C80 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61DC4D201B4E1A2F00601C80 /* Discover Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61DC4D431B4E1A2F00601C80 /* Build configuration list for PBXNativeTarget "Discover Life" */;
+			buildPhases = (
+				61DC4D1D1B4E1A2F00601C80 /* Sources */,
+				61DC4D1E1B4E1A2F00601C80 /* Frameworks */,
+				61DC4D1F1B4E1A2F00601C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Discover Life";
+			productName = "Discover Life";
+			productReference = 61DC4D211B4E1A2F00601C80 /* Discover Life.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61DC4D381B4E1A2F00601C80 /* Discover LifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61DC4D461B4E1A2F00601C80 /* Build configuration list for PBXNativeTarget "Discover LifeTests" */;
+			buildPhases = (
+				61DC4D351B4E1A2F00601C80 /* Sources */,
+				61DC4D361B4E1A2F00601C80 /* Frameworks */,
+				61DC4D371B4E1A2F00601C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61DC4D3B1B4E1A2F00601C80 /* PBXTargetDependency */,
+			);
+			name = "Discover LifeTests";
+			productName = "Discover LifeTests";
+			productReference = 61DC4D391B4E1A2F00601C80 /* Discover LifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61DC4D191B4E1A2F00601C80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = AkhalTech;
+				TargetAttributes = {
+					61DC4D201B4E1A2F00601C80 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					61DC4D381B4E1A2F00601C80 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 61DC4D201B4E1A2F00601C80;
+					};
+				};
+			};
+			buildConfigurationList = 61DC4D1C1B4E1A2F00601C80 /* Build configuration list for PBXProject "Discover Life" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61DC4D181B4E1A2F00601C80;
+			productRefGroup = 61DC4D221B4E1A2F00601C80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61DC4D201B4E1A2F00601C80 /* Discover Life */,
+				61DC4D381B4E1A2F00601C80 /* Discover LifeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61DC4D1F1B4E1A2F00601C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61DC4D2F1B4E1A2F00601C80 /* Main.storyboard in Resources */,
+				61DC4D341B4E1A2F00601C80 /* LaunchScreen.xib in Resources */,
+				61DC4D311B4E1A2F00601C80 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61DC4D371B4E1A2F00601C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61DC4D1D1B4E1A2F00601C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				611DDF821B4FFE91007A676D /* AppleSearch.swift in Sources */,
+				61DC4D2C1B4E1A2F00601C80 /* MapViewController.swift in Sources */,
+				611DDF801B4FFBEA007A676D /* GoogleSearch.swift in Sources */,
+				6178977F1B50AF840058815A /* MainTableViewController.swift in Sources */,
+				611DDF841B50377D007A676D /* CamaraViewController.swift in Sources */,
+				61DC4D2A1B4E1A2F00601C80 /* Discover_Life.xcdatamodeld in Sources */,
+				611DDF7E1B4F07A2007A676D /* CustomPointAnnotation.swift in Sources */,
+				617897811B50B3B40058815A /* EntryTableViewController.swift in Sources */,
+				61DC4D271B4E1A2F00601C80 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61DC4D351B4E1A2F00601C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61DC4D401B4E1A2F00601C80 /* Discover_LifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61DC4D3B1B4E1A2F00601C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61DC4D201B4E1A2F00601C80 /* Discover Life */;
+			targetProxy = 61DC4D3A1B4E1A2F00601C80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61DC4D2D1B4E1A2F00601C80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61DC4D2E1B4E1A2F00601C80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61DC4D321B4E1A2F00601C80 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61DC4D331B4E1A2F00601C80 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61DC4D411B4E1A2F00601C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61DC4D421B4E1A2F00601C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61DC4D441B4E1A2F00601C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Discover Life/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61DC4D451B4E1A2F00601C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Discover Life/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61DC4D471B4E1A2F00601C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Discover LifeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discover Life.app/Discover Life";
+			};
+			name = Debug;
+		};
+		61DC4D481B4E1A2F00601C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Discover LifeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discover Life.app/Discover Life";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61DC4D1C1B4E1A2F00601C80 /* Build configuration list for PBXProject "Discover Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61DC4D411B4E1A2F00601C80 /* Debug */,
+				61DC4D421B4E1A2F00601C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61DC4D431B4E1A2F00601C80 /* Build configuration list for PBXNativeTarget "Discover Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61DC4D441B4E1A2F00601C80 /* Debug */,
+				61DC4D451B4E1A2F00601C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61DC4D461B4E1A2F00601C80 /* Build configuration list for PBXNativeTarget "Discover LifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61DC4D471B4E1A2F00601C80 /* Debug */,
+				61DC4D481B4E1A2F00601C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		61DC4D281B4E1A2F00601C80 /* Discover_Life.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				61DC4D291B4E1A2F00601C80 /* Discover_Life.xcdatamodel */,
+			);
+			currentVersion = 61DC4D291B4E1A2F00601C80 /* Discover_Life.xcdatamodel */;
+			path = Discover_Life.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 61DC4D191B4E1A2F00601C80 /* Project object */;
+}
