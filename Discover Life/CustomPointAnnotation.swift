@@ -10,4 +10,7 @@ import MapKit
 
 class CustomPointAnnotation: MKPointAnnotation {
     var iconImage: UIImage!
+    var name = ""
+    var url: NSURL?
+    var mapItem: MKMapItem?
 }

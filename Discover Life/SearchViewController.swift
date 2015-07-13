@@ -78,7 +78,11 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if self.typeKeywords.text != "" {
             self.typeKeywords.text = self.typeKeywords.text + " "
         }
-        self.typeKeywords.text = self.typeKeywords.text + self.types[indexPath.row]
+        if(self.searchActive){
+            self.typeKeywords.text = self.typeKeywords.text + self.filtered[indexPath.row]
+        } else {
+            self.typeKeywords.text = self.typeKeywords.text + self.types[indexPath.row]
+        }
     }
     
     @IBAction func reset(sender: AnyObject) {
@@ -87,10 +91,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     @IBAction func search(sender: AnyObject) {
-        if self.typeKeywords != "" {
+        if self.typeKeywords.text != "" {
             performSegueWithIdentifier("showMap", sender: nil)
         }else {
-            // popup UIAlert
+            let alert = UIAlertController(title: "Keyword can't be empty", message: "Please input something in the keyword field.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
         }
     }
 

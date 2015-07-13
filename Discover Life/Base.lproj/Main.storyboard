@@ -68,7 +68,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Tec-ay-B7A">
                             <connections>
                                 <action selector="search:" destination="CAg-JS-mrB" id="CMh-7K-1hv"/>
-                                <segue destination="vXZ-lx-hvc" kind="showDetail" identifier="showMap" id="3H4-NE-nHl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,6 +75,7 @@
                         <outlet property="typeKeywords" destination="XCB-9f-r2t" id="VHx-eC-I1P"/>
                         <outlet property="typeSearchBar" destination="RmW-1f-Phd" id="pAK-d5-hx2"/>
                         <outlet property="typeTableView" destination="rdC-YL-eIA" id="pZN-P5-JIe"/>
+                        <segue destination="vXZ-lx-hvc" kind="showDetail" identifier="showMap" id="R4C-8m-grN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3I1-eM-Nmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -95,24 +95,111 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7oN-dl-KF7">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5b-XU-aDv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="BL6-Ff-Lu4"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="8tx-oI-9IE">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="TlH-VX-zyf">
+                                            <connections>
+                                                <action selector="back:" destination="vXZ-lx-hvc" id="m5P-mT-S27"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Settings" id="ntD-nq-79A">
+                                            <connections>
+                                                <action selector="settings:" destination="vXZ-lx-hvc" id="G8E-hr-bZe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7oN-dl-KF7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="1Tw-Vl-47T"/>
-                            <constraint firstItem="7oN-dl-KF7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="TZr-zK-qcZ"/>
+                            <constraint firstAttribute="trailing" secondItem="E5b-XU-aDv" secondAttribute="trailing" id="7oB-N5-mAa"/>
+                            <constraint firstItem="E5b-XU-aDv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="IQf-Ea-3Ui"/>
+                            <constraint firstItem="E5b-XU-aDv" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="JGc-cP-dIm"/>
+                            <constraint firstItem="7oN-dl-KF7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="64" id="TZr-zK-qcZ"/>
+                            <constraint firstAttribute="trailing" secondItem="E5b-XU-aDv" secondAttribute="trailing" id="TyQ-xf-Iq3"/>
+                            <constraint firstItem="E5b-XU-aDv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="WqG-6q-nXw"/>
+                            <constraint firstItem="E5b-XU-aDv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="cWP-Ek-Knc"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7oN-dl-KF7" secondAttribute="bottom" id="dfD-85-ox4"/>
                             <constraint firstAttribute="trailing" secondItem="7oN-dl-KF7" secondAttribute="trailing" id="kVB-CK-n7G"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IQf-Ea-3Ui"/>
+                                <exclude reference="TyQ-xf-Iq3"/>
+                                <exclude reference="cWP-Ek-Knc"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="mapNavigationItem" destination="8tx-oI-9IE" id="COH-Fx-hcK"/>
                         <outlet property="mapView" destination="7oN-dl-KF7" id="p0e-tb-2Xa"/>
+                        <segue destination="kMd-t5-OAU" kind="showDetail" identifier="showWebsite" id="EOD-II-B1S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2151" y="298"/>
+        </scene>
+        <!--Website View Controller-->
+        <scene sceneID="RnK-kP-13H">
+            <objects>
+                <viewController id="kMd-t5-OAU" customClass="WebsiteViewController" customModule="Discover_Life" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="juR-e1-w7w"/>
+                        <viewControllerLayoutGuide type="bottom" id="pkL-3X-Ouo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9jl-Kq-5gX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjH-hM-Kva">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="psp-rs-fcy"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="mbu-uB-R3G">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="05d-e3-gyE">
+                                            <connections>
+                                                <action selector="back:" destination="kMd-t5-OAU" id="w1P-NC-mSg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tID-M6-0fm">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tID-M6-0fm" firstAttribute="leading" secondItem="9jl-Kq-5gX" secondAttribute="leading" id="8BQ-hX-WbP"/>
+                            <constraint firstAttribute="trailing" secondItem="tID-M6-0fm" secondAttribute="trailing" id="8zT-tu-bpS"/>
+                            <constraint firstItem="AjH-hM-Kva" firstAttribute="top" secondItem="9jl-Kq-5gX" secondAttribute="top" id="RTa-Na-ncb"/>
+                            <constraint firstItem="tID-M6-0fm" firstAttribute="top" secondItem="AjH-hM-Kva" secondAttribute="bottom" id="Sf4-1b-qMZ"/>
+                            <constraint firstAttribute="trailing" secondItem="AjH-hM-Kva" secondAttribute="trailing" id="Vsj-tG-0Is"/>
+                            <constraint firstItem="pkL-3X-Ouo" firstAttribute="top" secondItem="tID-M6-0fm" secondAttribute="bottom" id="izW-kk-nEb"/>
+                            <constraint firstItem="AjH-hM-Kva" firstAttribute="leading" secondItem="9jl-Kq-5gX" secondAttribute="leading" id="v6Z-Ck-Fql"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleNavigationItem" destination="mbu-uB-R3G" id="AU3-8W-KSc"/>
+                        <outlet property="webView" destination="tID-M6-0fm" id="HN0-AJ-vdh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avi-DL-pEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2976" y="298"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t2P-bR-2x3">

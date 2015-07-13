@@ -30,34 +30,36 @@ class AppleSearch {
                 println("No matches found")
             } else {
                 for item in response.mapItems as! [MKMapItem] {
-                    println("Name = \(item.name)")
+//                    println("Name = \(item.name)")
                     
                     var placeMark = item.placemark as MKPlacemark!
                     var address = placeMark.addressDictionary as NSDictionary!
                     var titleString: String!
                     var subtitleString: String!
                     var name: String!
-                    var Thoroughfare: String!
-                    var State: String!
-                    var City: String!
-                    var Country: String!
+                    var street: String!
+                    var zip: String!
+                    var city: String!
                     
-                    var emptyString: String! = " "
+                    let distance = Int(location.distanceFromLocation(placeMark.location))
                     
-                    name = (address.objectForKey("name") != nil ? address.objectForKey("name") : emptyString) as! String
-                    Thoroughfare = (address.objectForKey("Thoroughfare") != nil ? address.objectForKey("Thoroughfare") : emptyString) as! String
-                    State = (address.objectForKey("State") != nil ? address.objectForKey("State") : emptyString) as! String
-                    City = (address.objectForKey("City") != nil ? address.objectForKey("City") : emptyString) as! String
-                    Country = (address.objectForKey("Country") != nil ? address.objectForKey("Country") : emptyString) as! String
-                    
-                    titleString = String(format: "%@ %@", name, Thoroughfare)
-                    subtitleString = String(format: "%@ %@ %@", State, City, Country)
+                    name = (address.objectForKey("Name") != nil ? address.objectForKey("Name") : "") as! String
+                    street = (address.objectForKey("Street") != nil ? address.objectForKey("Street") : "") as! String
+                    zip = (address.objectForKey("ZIP") != nil ? address.objectForKey("ZIP") : "") as! String
+                    city = (address.objectForKey("City") != nil ? address.objectForKey("City") : "") as! String
+                    titleString = "\(name) (\(distance)m)"
+                    subtitleString = "\(street), \(city), \(zip)"
                     
                     var pin = CustomPointAnnotation()
                     pin.coordinate = item.placemark.coordinate
-                    pin.title = item.name
-                    pin.subtitle = titleString
+                    pin.title = titleString
+                    pin.subtitle = subtitleString
                     pin.iconImage = UIImage(named: "cafe")
+                    
+                    pin.name = name
+                    pin.url = item.url
+                    pin.mapItem = item
+                    
                     mapView.addAnnotation(pin)
                 }
             }
