@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6101D7601B520EB900371151 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6101D75F1B520EB900371151 /* SearchViewController.swift */; };
 		611DDF7E1B4F07A2007A676D /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611DDF7D1B4F07A2007A676D /* CustomPointAnnotation.swift */; };
 		611DDF801B4FFBEA007A676D /* GoogleSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611DDF7F1B4FFBEA007A676D /* GoogleSearch.swift */; };
 		611DDF821B4FFE91007A676D /* AppleSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611DDF811B4FFE91007A676D /* AppleSearch.swift */; };
-		611DDF841B50377D007A676D /* CamaraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611DDF831B50377D007A676D /* CamaraViewController.swift */; };
-		6178977F1B50AF840058815A /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6178977E1B50AF840058815A /* MainTableViewController.swift */; };
-		617897811B50B3B40058815A /* EntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617897801B50B3B40058815A /* EntryTableViewController.swift */; };
 		61DC4D271B4E1A2F00601C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC4D261B4E1A2F00601C80 /* AppDelegate.swift */; };
 		61DC4D2A1B4E1A2F00601C80 /* Discover_Life.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 61DC4D281B4E1A2F00601C80 /* Discover_Life.xcdatamodeld */; };
 		61DC4D2C1B4E1A2F00601C80 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC4D2B1B4E1A2F00601C80 /* MapViewController.swift */; };
@@ -34,12 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6101D75F1B520EB900371151 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		611DDF7D1B4F07A2007A676D /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		611DDF7F1B4FFBEA007A676D /* GoogleSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSearch.swift; sourceTree = "<group>"; };
 		611DDF811B4FFE91007A676D /* AppleSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSearch.swift; sourceTree = "<group>"; };
-		611DDF831B50377D007A676D /* CamaraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamaraViewController.swift; sourceTree = "<group>"; };
-		6178977E1B50AF840058815A /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		617897801B50B3B40058815A /* EntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewController.swift; sourceTree = "<group>"; };
 		61DC4D211B4E1A2F00601C80 /* Discover Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discover Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61DC4D251B4E1A2F00601C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61DC4D261B4E1A2F00601C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,10 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				61DC4D261B4E1A2F00601C80 /* AppDelegate.swift */,
-				617897801B50B3B40058815A /* EntryTableViewController.swift */,
-				6178977E1B50AF840058815A /* MainTableViewController.swift */,
+				6101D75F1B520EB900371151 /* SearchViewController.swift */,
 				61DC4D2B1B4E1A2F00601C80 /* MapViewController.swift */,
-				611DDF831B50377D007A676D /* CamaraViewController.swift */,
 				611DDF7D1B4F07A2007A676D /* CustomPointAnnotation.swift */,
 				611DDF7F1B4FFBEA007A676D /* GoogleSearch.swift */,
 				611DDF811B4FFE91007A676D /* AppleSearch.swift */,
@@ -239,12 +233,10 @@
 			files = (
 				611DDF821B4FFE91007A676D /* AppleSearch.swift in Sources */,
 				61DC4D2C1B4E1A2F00601C80 /* MapViewController.swift in Sources */,
+				6101D7601B520EB900371151 /* SearchViewController.swift in Sources */,
 				611DDF801B4FFBEA007A676D /* GoogleSearch.swift in Sources */,
-				6178977F1B50AF840058815A /* MainTableViewController.swift in Sources */,
-				611DDF841B50377D007A676D /* CamaraViewController.swift in Sources */,
 				61DC4D2A1B4E1A2F00601C80 /* Discover_Life.xcdatamodeld in Sources */,
 				611DDF7E1B4F07A2007A676D /* CustomPointAnnotation.swift in Sources */,
-				617897811B50B3B40058815A /* EntryTableViewController.swift in Sources */,
 				61DC4D271B4E1A2F00601C80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
